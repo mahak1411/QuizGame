@@ -11,7 +11,7 @@ const QuizGame = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.jsonserve.com/Uw5CrX', { mode: 'cors' });
+        const response = await fetch('/Uw5CrX');
         if (!response.ok) throw new Error("Failed to fetch data");
         
         const jsonData = await response.json();
